@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>以墓志来解读唐代女性</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #7f95cd; /* 设置背景颜色 */
+            margin: 0;
+            padding: 20px;
+        }
+        .section {
+            background-color: #769be0; /* 设置章节背景颜色 */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2em;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 2em;
+        }
+        .subheading {
+            font-weight: bold;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #6cbbec;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        th, td {
+            border: 1px solid #5f9dc4;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #249f91;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <!-- 省略原有内容部分，保持不变 -->
+    </div>
+
+    <div class="section">
+        <div class="image-container">
+            <img src="https://imgur.la/images/2024/12/16/-1.jpg" alt="墓志数据图样">
+        </div>
+        <div id="main" style="width: 600px;height:400px;margin-top: 2em;"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main'));
+
+            // 数据准备
+            var categories = ['仅提及女子名讳', '男性名讳在前女子名讳在后', '无题'];
+            var periods = ['早唐', '盛唐', '中唐', '晚唐'];
+            var data = [
+                [102, 201, 86], // 早唐数据
+                [43, 176, 11],  // 盛唐数据
+                [82, 149, 9],   // 中唐数据
+                [118, 136, 20]  // 晚唐数据
+            ];
+
+            // 数据转换成ECharts需要的格式
+            var seriesData = categories.map((category, i) => ({
+                name: category,
+                type: 'bar',
+                data: periods.map(period => data[periods.indexOf(period)][i])
+            }));
+
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    text: '名讳刻写情况' +
+                        '                                           ' +
+                        '                                           ',
+                    left: 'center'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                },
+                legend: {
+                    data: categories,
+                    left: 'right'
+                },
+                xAxis: {
+                    type: 'category',
+                    data: periods,
+                    axisLabel: {
+                        interval: 0,
+                        rotate: 30
+                    }
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: seriesData
+            };
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+    </div>
+
+    <div class="section">
+         <table>
+            <tr>
+                <th>时期</th>
+                <th>男性墓志数量</th>
+                <th>女性墓志数量</th>
+            </tr>
+            <tr>
+                <td>前唐</td>
+                <td>709</td>
+                <td>191</td>
+            </tr>
+            <tr>
+                <td>中唐</td>
+                <td>3645</td>
+                <td>855</td>
+            </tr>
+            <tr>
+                <td>晚唐</td>
+                <td>467</td>
+                <td>132</td>
+            </tr>
+        </table>
+        <h2>对比情况概述</h2>
+        <p>唐代女性占比四分之一的墓志</p>
+        <p>数据来源《 唐 代 墓 志 汇 编 》 及 《 唐代 墓 志 汇 编 续 集 》里 有 突 出 女 性 好 诗 词 歌 赋 、 善 笔 札等 赞誉 的 墓 志 有３ ６ 篇 。此 外 的 赞 颂 有 7 篇 歌 舞 乐 曲 ， 1 1 篇 治 理 家 业 ， 6 篇 养 育 子 女。</p>
+        <p>，来自 周 绍 良 主 编 ， 赵 超 副 主 编 ： 《 唐 代 墓 志 汇 编 》 《 唐 赠 尚 书 左 仆 射 嗣 曹 王 故 妃 荥 阳 郑 氏 墓 志 铭并 叙 》</p>
+        <h2>大唐女子独特性</h2>
+        <p>后 宫 选 女 以 女 性 才 行 为 选 择 标 准. 社 会 也 以 女 性 才 行 为 判 断 标 准. 所 以 唐 代 社 会 女 性 普 遍 才 艺 出 众</p>
+        <p>社会地位独特</p>
+        <p>女性地位相对独特，有一定社会参与度</p>
+        <p>参与文学等创作，有文化与艺术贡献</p>
+        <h2>结论</h2>
+        <p>通过对唐代女性墓志的分析,研究团队揭示了唐代女性生活和社会地位的复杂性.</p>
+        <p>墓志不仅是对师者的纪念,也是对当时社会文化的反映。</p>
+        <p>这一研究也为我们提供了一个了解唐代女性生活的新视角,同时也反映了历史上女性地位的变化和社会对女性角色的期望</p>
+        <h2>重要意义</h2>
+        <p>这些墓志不仅是逝者的纪念，更是当时社会文化的生动反映，展现了唐代女性在守礼、美貌、才华与自我表达等多方面的复杂性。</p>
+        <p>这一研究填补了历史文献的空白，</p>
+        <p>丰富了我们对唐代社会的全面认知。</p>
+        <p>全文完</p>
+    </div>
+</body>
+</html>
+        </script>
+    </div>
+</body>
+</html>
