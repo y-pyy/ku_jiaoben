@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <!-- 在head中添加微信适配 -->
+    <!-- 禁止缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 禁止自动识别电话号码 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- 设置状态栏颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <!-- 确保页面在GitHub Pages正确显示 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 禁用缓存（开发时有用） -->
@@ -12,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>突发！日本自卫队官员强闯我驻日使馆 | 广州日报</title>
+    <title>突发！日本自卫队官员强闯我驻日使馆</title>
     <style>
         * {
             margin: 0;
@@ -808,9 +815,11 @@
             <div class="video-container" style="max-width: 600px; margin: 0 auto 30px; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);">
                 <video id="newsVideo" controls style="width: 100%; display: block;">
                     <!-- 这里需要替换为您的视频文件路径 -->
-                    <source src="./news_report_video.mp4" type="video/mp4">
+                    <source src="https://mp.weixin.qq.com/s/XZFiuY-WBzlFOkgNEe63Cg" type="video/mp4">
+                    <source src="./news_report_video.webm" type="video/mp4">
                     <!-- 可以添加多个格式支持 -->
                     <source src="./news_report_video.webm" type="video/webm">
+                    <source src="https://mp.weixin.qq.com/s/XZFiuY-WBzlFOkgNEe63Cg" type="video/webm">
                     您的浏览器不支持视频播放，请升级浏览器。
                 </video>
                 <div class="video-info" style="padding: 16px; background: rgba(255,255,255,0.1); color: #fff; text-align: left;">
@@ -818,7 +827,7 @@
                         <svg style="width: 20px; height: 20px; fill: #fff;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 13.5v-5l4.5 2.5-4.5 2.5z"/></svg>
                         <span style="font-weight: 600;">事件回顾与专家解读</span>
                     </div>
-                    <div style="font-size: 0.85rem; opacity: 0.8;">时长: 2分30秒 | 分辨率: 1080P</div>
+                    <div style="font-size: 0.85rem; opacity: 0.8;">时长: 2分08秒 | 分辨率: 1080P</div>
                 </div>
             </div>
 
