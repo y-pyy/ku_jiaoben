@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 确保页面在GitHub Pages正确显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 禁用缓存（开发时有用） -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>突发！日本自卫队官员强闯我驻日使馆 | 广州日报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #a12020;
+            --alert-red: #c41e3a;
+            --neutral-gray: #7d6c78;
+            --light-bg: #f8f9fa;
+            --text-primary: #1a1a1a;
+            --text-secondary: #684a5f;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(180deg, #f0f4f8 0%, #ffffff 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+            background: #fff;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .cover-section {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(135deg, #2e0c27 0%, var(--primary-blue) 50%, #420a28 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .cover-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+            z-index: 1;
+        }
+
+        .cover-header {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-top: 20px;
+        }
+
+        .logo-box {
+            background: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-text {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--primary-blue);
+            letter-spacing: 2px;
+        }
+
+        .flag-icon {
+            width: 60px;
+            height: 40px;
+            background: linear-gradient(90deg, #de2910 0%, #de7e10 33%, #fff 33%, #fff 66%, #de2910 66%, #de2910 100%);
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .flag-icon::after {
+            content: '★';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffde00;
+            font-size: 16px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .cover-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 40px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .breaking-news {
+            display: inline-block;
+            background: var(--alert-red);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        .main-title {
+            font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+            line-height: 1.3;
+        }
+
+        .sub-title {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 24px;
+            font-weight: 500;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .guide-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        .arrow-up {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .cover-footer {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .scroll-hint {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            padding: 60px 20px;
+            background: #fff;
+        }
+
+        .section-title {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 800;
+            color: var(--primary-blue);
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 16px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--alert-red));
+            border-radius: 2px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+            padding: 20px 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            cursor: pointer;
+            transition: all var(--transition-speed) ease;
+            box-shadow: var(--card-shadow);
+            border: 2px solid transparent;
+        }
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            border-color: var(--primary-blue);
+        }
+
+        .card-icon {
+            width: 44px;
+            height: 44px;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, var(--primary-blue), #432d6f);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+        .card-label {
+            font-size: 0.75rem;
+            color: var(--neutral-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+        .card-value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+
+        .stance-section {
+            background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+            padding: 60px 0;
+        }
+
+        .stance-scroll {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+        .stance-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .stance-card {
+            flex: 0 0 auto;
+            width: 280px;
+            padding: 24px;
+            border-radius: 12px;
+            scroll-snap-align: center;
+            color: #fff;
+            transition: transform var(--transition-speed) ease;
+        }
+        .stance-card:hover {
+            transform: scale(1.02);
+        }
+        .stance-china {
+            background: linear-gradient(135deg, #de2910 0%, #8b0000 100%);
+        }
+        .stance-japan {
+            background: linear-gradient(135deg, #bc002d 0%, #8b0000 100%);
+        }
+
+        .stance-flag {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .stance-flag svg {
+            width: 28px;
+            height: 28px;
+            fill: #fff;
+        }
+        .stance-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .stance-text {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .impact-section {
+            background: #fff;
+            padding: 60px 20px;
+        }
+
+        .chart-container {
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        .chart-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: var(--card-shadow);
+        }
+        .chart-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .chart-icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--primary-blue);
+        }
+        .chart-bar {
+            height: 40px;
+            background: linear-gradient(90deg, var(--primary-blue), #662d6f);
+            border-radius: 6px;
+            position: relative;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .chart-label {
+            font-size: 0.85rem;
+            color: var(--neutral-gray);
+            margin-top: 8px;
+        }
+
+        .livelihood-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .livelihood-card {
+            background: #fff;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all var(--transition-speed) ease;
+        }
+        .livelihood-card:hover {
+            border-color: var(--primary-blue);
+            transform: translateY(-4px);
+            box-shadow: var(--card-shadow);
+        }
+        .livelihood-icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 12px;
+            background: linear-gradient(135deg, var(--primary-blue), #6f2d52);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .livelihood-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: #fff;
+        }
+        .livelihood-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+
+        .analysis-section {
+            background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+            padding: 60px 20px;
+            position: relative;
+        }
+        .analysis-container {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+        }
+        .analysis-icon-box {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-blue), #6f2d60);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(26, 58, 92, 0.2);
+        }
+        .analysis-icon-box svg {
+            width: 48px;
+            height: 48px;
+            fill: #fff;
+        }
+        .analysis-content {
+            flex: 1;
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: var(--card-shadow);
+        }
+        .analysis-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 16px;
+        }
+        .analysis-text {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .footer-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #0f1419 100%);
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 32px;
+            letter-spacing: 3px;
+        }
+        .qr-box {
+            background: #fff;
+            padding: 16px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+        .qr-code {
+            width: 180px;
+            height: 180px;
+            background: #fff;
+            border: 4px solid var(--primary-blue);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .qr-pattern {
+            width: 140px;
+            height: 140px;
+            background-image:
+                linear-gradient(45deg, #000 25%, transparent 25%),
+                linear-gradient(-45deg, #000 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #000 75%),
+                linear-gradient(-45deg, transparent 75%, #000 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        .social-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-speed) ease;
+            backdrop-filter: blur(10px);
+        }
+        .social-icon:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(1.1);
+        }
+        .social-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: #fff;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, #f4a460, #e67e22);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all var(--transition-speed) ease;
+            box-shadow: 0 4px 16px rgba(244, 164, 96, 0.3);
+        }
+        .share-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(244, 164, 96, 0.4);
+        }
+        .share-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+        }
+        .footer-text {
+            margin-top: 32px;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-speed) ease;
+            backdrop-filter: blur(4px);
+            padding: 20px;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px 24px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            transform: scale(0.9);
+            transition: transform var(--transition-speed) ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+        .modal-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 16px;
+            background: linear-gradient(135deg, var(--primary-blue), #6f2d50);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: #fff;
+        }
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 12px;
+        }
+        .modal-text {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            white-space: pre-line;
+            text-align: left;
+        }
+        .modal-close {
+            margin-top: 24px;
+            padding: 12px 32px;
+            background: linear-gradient(135deg, var(--primary-blue), #6f2d5a);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-speed) ease;
+        }
+        .modal-close:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 58, 92, 0.3);
+        }
+
+        @media (max-width: 480px) {
+            html { font-size: 14px; }
+            .cards-grid { gap: 12px; }
+            .info-card { padding: 16px 12px; }
+            .stance-card { width: 260px; }
+            .livelihood-grid { gap: 12px; }
+            .analysis-container { flex-direction: column; align-items: center; }
+            .analysis-icon-box { width: 64px; height: 64px; }
+        }
+        @media (min-width: 769px) {
+            .container { box-shadow: 0 0 40px rgba(0, 0, 0, 0.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 封面页 -->
+        <section class="cover-section" id="cover">
+            <div class="cover-bg"></div>
+
+            <header class="cover-header">
+                <div class="logo-box">
+                    <div class="logo-text">新闻速递</div>
+                </div>
+                <div class="flag-icon"></div>
+            </header>
+
+            <div class="cover-content">
+                <div class="breaking-news">独家·突发</div>
+                <h1 class="main-title">日本自卫队官员强闯<br>我驻日大使馆</h1>
+                <p class="sub-title">威胁杀害外交官，中方严正抗议，要求日方彻查严惩</p>
+                <div class="guide-text">
+                    <svg class="arrow-up" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4l-8 8h6v8h4v-8h6z"/></svg>
+                    <span>滑动</span>
+                </div>
+            </div>
+
+            <footer class="cover-footer">
+                <p class="scroll-hint">上滑解锁更多信息</p>
+            </footer>
+        </section>
+
+        <!-- 事件速览・5W1H -->
+        <section class="section" id="overview">
+            <h2 class="section-title">事件速览・5W1H</h2>
+            <div class="cards-grid">
+                <div class="info-card" data-modal="who">
+                    <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+                    <div class="card-content"><div class="card-label">Who</div><div class="card-value">日本自卫队现役官员<br>闯入中国驻日大使馆</div></div>
+                </div>
+                <div class="info-card" data-modal="when">
+                    <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm-8 4H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg></div>
+                    <div class="card-content"><div class="card-label">When</div><div class="card-value">2026 年 3 月 24 日</div></div>
+                </div>
+                <div class="info-card" data-modal="where">
+                    <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+                    <div class="card-content"><div class="card-label">Where</div><div class="card-value">日本东京<br>中国驻日本大使馆</div></div>
+                </div>
+                <div class="info-card" data-modal="what">
+                    <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm1 16h-2v-2h2v2zm0-4h-2V9h2v5z"/></svg></div>
+                    <div class="card-content"><div class="card-label">What</div><div class="card-value">翻墙闯入使馆<br>并威胁杀害外交官</div></div>
+                </div>
+                <div class="info-card" data-modal="why">
+                    <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></div>
+                    <div class="card-content"><div class="card-label">Why</div><div class="card-value">极端右翼思想蔓延<br>个人行为or政治信号？</div></div>
+                </div>
+                <div class="info-card" data-modal="how">
+                    <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36 2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></div>
+                    <div class="card-content"><div class="card-label">How</div><div class="card-value">翻越使馆围墙<br>闯入后威胁杀害</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 多方立场 -->
+        <section class="stance-section" id="stances">
+            <h2 class="section-title">多方立场与反应</h2>
+            <div class="stance-scroll">
+                <div class="stance-card stance-china">
+                    <div class="stance-flag"><svg viewBox="0 0 24 24"><path d="M2 2h20v20H2z"/><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><circle cx="12" cy="12" r="2"/></svg></div>
+                    <div class="stance-name">中方立场</div>
+                    <div class="stance-text">中国外交部已向日本政府提出严正交涉，表示“深感震惊和强烈愤慨”，要求日方立即彻查事件，严惩肇事者，并采取有效措施保障中国外交机构和人员的安全与尊严。</div>
+                </div>
+                <div class="stance-card stance-japan">
+                    <div class="stance-flag"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="#fff"/><circle cx="12" cy="12" r="4" fill="#bc002d"/></svg></div>
+                    <div class="stance-name">日方反应</div>
+                    <div class="stance-text">日本外务省回应称“正在了解情况”，警方已介入调查。日媒报道称涉事人员疑似有精神问题，但具体动机仍在调查中。防卫省表示将配合调查。</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 影响直击・湾区关联 -->
+        <section class="impact-section" id="impact">
+            <h2 class="section-title">影响直击・湾区关联</h2>
+            <div class="chart-container">
+                <div class="chart-box">
+                    <div class="chart-title"><svg class="chart-icon" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg> 在日企业与人员安全</div>
+                    <div class="chart-bar" style="width: 90%; background: linear-gradient(90deg, #c41e3a, #8b0000);">风险显著上升</div>
+                    <div class="chart-label">在日中资企业、留学生及侨民需提高安全防范等级</div>
+                </div>
+                <div class="chart-box">
+                    <div class="chart-title"><svg class="chart-icon" viewBox="0 0 24 24"><path d="M19.77 7.23l.01-.01-3.72-3.72L15 4.56l2.11 2.11c.91-.26 1.91-.26 2.66.56zm-8.23 9.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-3.5-3h1.96c.25-.92.8-1.72 1.54-2.29L8.5 9.29c-.91.26-1.91.26-2.66-.56l-.01.01 3.72 3.72 1.06-1.06-2.11-2.11c.26-.91.26-1.91-.56-2.66zM6 17c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-4.68c0-.98-.39-1.92-1.09-2.61l-2.91-2.91V6c0-.55-.45-1-1-1s-1 .45-1 1v.72c-.55 0-1 .45-1 1s.45 1 1 1v.68c0 .83.33 1.63.92 2.22l.78.78v1.5c0 1.1.9 2 2 2h.5v1c0 .28.22.5.5.5s.5-.22.5-.5v-1h.5c1.1 0 2-.9 2-2v-1.5c0-.28-.22-.5-.5-.5s-.5.22-.5.5v1h-.5v-1.5c0-1.1-.9-2-2-2h-.5v-.72c0-.83-.33-1.63-.92-2.22l-.78-.78V6c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v1.59c-.55 0-1 .45-1 1s.45 1 1 1v.72c0 .55.45 1 1 1s1-.45 1-1v-.72c.55 0 1-.45 1-1s-.45-1-1-1V6h2v1.59c0 1.1.9 2 2 2h.5v.72c0 .83.33 1.63.92 2.22l.78.78V17H6z"/></svg> 对日经贸与人员往来</div>
+                    <div class="chart-bar" style="width: 70%;">短期波动加剧</div>
+                    <div class="chart-label">商务交流、旅游、留学等活动可能受政治氛围影响</div>
+                </div>
+            </div>
+            <div class="livelihood-grid">
+                <div class="livelihood-card">
+                    <div class="livelihood-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
+                    <div class="livelihood-label">在日企业与侨胞<br>需加强安全防护</div>
+                </div>
+                <div class="livelihood-card">
+                    <div class="livelihood-icon"><svg viewBox="0 0 24 24"><path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l.01-1.14c-.87-.34-1.75-.87-2.06-1.86-.21-.67-.26-1.35-.15-2H20v-2h-1.78c-.25-1.13-.77-2.21-1.55-3.14L15.66 8H22V6h-7.08l-1.58-1.9C12.96 3.68 12.49 3.5 12 3.5s-.96.18-1.34.6L9.09 6H2v2h6.34l1.01 1.21c-.78.93-1.3 2.01-1.55 3.14H6v2h1.75c.11.65.06 1.33-.15 2-.31.99-1.19 1.52-2.06 1.86L3.95 19zM12 5.5l1.09 1.3H10.9L12 5.5z"/></svg></div>
+                    <div class="livelihood-label">赴日商务与旅游<br>建议审慎评估</div>
+                </div>
+                <div class="livelihood-card">
+                    <div class="livelihood-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 19h20L12 2zm0 4l6 13H6l6-13z"/></svg></div>
+                    <div class="livelihood-label">日本对华投资<br>与供应链稳定性</div>
+                </div>
+                <div class="livelihood-card">
+                    <div class="livelihood-icon"><svg viewBox="0 0 24 24"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg></div>
+                    <div class="livelihood-label">中日民间交流<br>与舆论环境</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 深度观察 -->
+        <section class="analysis-section" id="analysis">
+            <div class="analysis-container">
+                <div class="analysis-icon-box">
+                    <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                </div>
+                <div class="analysis-content">
+                    <div class="analysis-title">【新闻短评】信号危险，影响深远</div>
+                    <div class="analysis-text">
+                        <strong>事件深层原因：</strong> 此次事件绝非孤立的个人极端行为。其背后是日本国内右翼思潮的抬头、对华错误认知的蔓延，以及部分政治势力企图通过挑衅外交事件转移国内矛盾的策略。一名现役自卫队官员的举动，折射出日本社会内部对华敌意的制度性滋长，这是比事件本身更危险的信号。
+                        <br><br>
+                        <strong>后续走向预判：</strong> 中方必然持续施加外交压力，要求日方彻底调查、公开真相、严惩责任人，并做出具有约束力的安全保证。事件将给本就脆弱的中日关系再蒙阴影，两国高层交往、安全对话和民间交流可能阶段性受阻。不排除日方为平息事态做出有限妥协，但难以根除结构性矛盾。
+                        <br><br>
+                        <strong>地区格局影响：</strong> 此事严重损害外交使团的安全信心，可能引发连锁反应。事件再次警示，东亚地区的和平稳定基石依然脆弱，任何挑衅行为都可能成为打破地区平衡的导火索。中国坚持和平发展，但也必将坚决维护国家尊严与外交人员安全。
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 结尾页 -->
+        <section class="footer-section" id="footer">
+            <div class="footer-logo">新闻速递</div>
+            <!-- 视频播放器容器 -->
+            <div class="video-container" style="max-width: 600px; margin: 0 auto 30px; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);">
+                <video id="newsVideo" controls style="width: 100%; display: block;">
+                    <!-- 这里需要替换为您的视频文件路径 -->
+                    <source src="./news_report_video.mp4" type="video/mp4">
+                    <!-- 可以添加多个格式支持 -->
+                    <source src="./news_report_video.webm" type="video/webm">
+                    您的浏览器不支持视频播放，请升级浏览器。
+                </video>
+                <div class="video-info" style="padding: 16px; background: rgba(255,255,255,0.1); color: #fff; text-align: left;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                        <svg style="width: 20px; height: 20px; fill: #fff;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 13.5v-5l4.5 2.5-4.5 2.5z"/></svg>
+                        <span style="font-weight: 600;">事件回顾与专家解读</span>
+                    </div>
+                    <div style="font-size: 0.85rem; opacity: 0.8;">时长: 2分30秒 | 分辨率: 1080P</div>
+                </div>
+            </div>
+
+            <!-- 视频播放控制按钮 -->
+            <div class="video-controls" style="display: flex; justify-content: center; gap: 16px; margin-bottom: 32px;">
+                <button id="playBtn" class="video-btn" style="background: linear-gradient(135deg, #4CAF50, #2E7D32);">
+                    <svg style="width: 20px; height: 20px; fill: #fff; margin-right: 8px;" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    播放
+                </button>
+                <button id="pauseBtn" class="video-btn" style="background: linear-gradient(135deg, #FF9800, #EF6C00);">
+                    <svg style="width: 20px; height: 20px; fill: #fff; margin-right: 8px;" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                    暂停
+                </button>
+                <button id="fullscreenBtn" class="video-btn" style="background: linear-gradient(135deg, #2196F3, #0D47A1);">
+                    <svg style="width: 20px; height: 20px; fill: #fff; margin-right: 8px;" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                    全屏
+                </button>
+            </div>
+
+            <!-- 视频描述 -->
+            <div class="video-description" style="max-width: 600px; margin: 0 auto 40px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 8px; text-align: left;">
+                <h3 style="color: #fff; margin-bottom: 12px; font-size: 1.1rem;">视频内容简介</h3>
+                <ul style="color: rgba(255,255,255,0.9); font-size: 0.9rem; line-height: 1.6; padding-left: 20px;">
+                    <li style="margin-bottom: 8px;">中国外交部发言人严正声明回放</li>
+                    <li style="margin-bottom: 8px;">使馆现场示意图与事发过程模拟</li>
+                    <li style="margin-bottom: 8px;">国际关系专家对事件深度解读</li>
+                    <li style="margin-bottom: 8px;">在日侨胞安全防护建议</li>
+                    <li>事件对中日关系的长远影响分析</li>
+                </ul>
+            </div>
+
+            <!-- 保留原有的社交媒体分享图标 -->
+            <div class="social-icons">
+                <div class="social-icon" title="微信"><svg viewBox="0 0 24 24"><path d="M8.5 10.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm5 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zM12 2C6.48 2 2 5.76 2 10.5c0 2.55 1.29 4.84 3.36 6.39L4 21l4.5-1.5c1.07.32 2.25.5 3.5.5 5.52 0 10-3.76 10-8.5S17.52 2 12 2zm0 15c-1.11 0-2.17-.17-3.15-.48L6 17.5l.75-2.75C4.97 13.64 4 12.13 4 10.5 4 6.91 7.58 4 12 4s8 2.91 8 6.5-3.58 6.5-8 6.5z"/></svg></div>
+                <div class="social-icon" title="微博"><svg viewBox="0 0 24 24"><path d="M10.005 2C5.023 2 1.224 5.332 1.224 9.138c0 2.064 1.24 3.89 3.156 5.13-.144.936-.504 2.328-1.008 3.384-.072.216.12.456.36.384 1.056-.312 2.184-.816 3.048-1.416 1.032.288 2.136.456 3.216.456 4.984 0 8.784-3.336 8.784-7.14S14.984 2 10.005 2zm-.12 12.24c-1.68.168-3.144-.888-3.264-2.352-.12-1.464 1.152-2.784 2.832-2.952 1.68-.168 3.144.888 3.264 2.352.12 1.464-1.152 2.784-2.832 2.952zm4.56-5.52c-.6-.96-1.92-1.44-3.048-1.08-.24.072-.36.36-.24.576.12.216.36.312.6.24.84-.264 1.8.096 2.28.84.12.216.384.288.6.168.216-.12.288-.384.168-.6-.12-.216-.24-.432-.36-.648-.24.12-.48.24-.72.36.24.048.48.096.72.144z"/></svg></div>
+                <div class="social-icon" title="客户端"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg></div>
+            </div>
+
+            <p class="footer-text" style="margin-top: 32px; font-size: 0.85rem; color: rgba(255, 255, 255, 0.6);">
+                © 2026 3/24<br>
+                HTML制作：不虞的扁担
+            </p>
+        </section>
+    </div>
+
+    <!-- 弹窗（保持不变） -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <div class="modal-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+            <h3 class="modal-title" id="modalTitle">标题</h3>
+            <p class="modal-text" id="modalText">内容</p>
+            <button class="modal-close" onclick="closeModal()">关闭</button>
+        </div>
+    </div>
+
+    <script>
+        const modalData = {
+            who: {
+                title: '涉事人员',
+                text: `闯入者：一名自称为日本自卫队的现役官员。
+行为：翻越中国驻日本大使馆围墙，强行闯入使馆区域，并威胁要杀害中国外交官。
+性质：此行为严重违反《维也纳外交关系公约》，侵犯了外交馆舍不可侵犯权，是性质极为恶劣的外交事件。`
+            },
+            when: {
+                title: '时间线',
+                text: `2026年3月24日：事件发生。
+当日：中国外交部紧急召见日本驻华大使，提出严正交涉和强烈抗议。
+目前：日本警方已介入调查，具体动机仍在核查中。中方要求日方立即彻查，依法严惩肇事者。`
+            },
+            where: {
+                title: '事件地点',
+                text: `地点：日本东京，中国驻日本大使馆。
+使馆地位：根据国际法和《维也纳外交关系公约》，使馆馆舍不受侵犯。日本政府有义务采取一切适当步骤保护使馆免受任何侵入或损害。
+背景：中日关系近年因历史、领土等问题持续紧张，此次事件发生在外交场所，性质尤为严重。`
+            },
+            what: {
+                title: '事件经过',
+                text: `核心事实：一名日本自卫队官员非法闯入中国驻日大使馆，并发出死亡威胁。
+关键点：
+1. 闯入者身份特殊，为“现役官员”，非普通民众。
+2. 手段为“翻墙闯入”，属蓄意行为。
+3. 目标明确，直接威胁“杀害中国外交官”。
+影响：这不仅是对中国主权和尊严的严重挑衅，也对所有外交人员的生命安全构成了直接威胁，破坏了国际交往的基本规则。`
+            },
+            why: {
+                title: '背景与动机',
+                text: `可能动机分析：
+1. 个人极端行为：涉事人员受右翼思想或反华情绪煽动，采取个人极端行动。
+2. 社会思潮反映：日本国内对华不友好情绪和右翼民族主义抬头，为类似行为提供了社会土壤。
+3. 政治信号试探：不排除是部分势力试图通过挑衅行为试探中方底线，或转移其国内政治压力。
+深层原因：近年来日本在历史、台湾等问题上频频挑衅，导致两国互信严重受损，民间对立情绪加剧。`
+            },
+            how: {
+                title: '处理与应对',
+                text: `中方反应：
+1. 外交层面：提出严正交涉，要求日方立即彻查，公布真相，严惩肇事者。
+2. 安全层面：要求日方切实保障中国驻日外交机构和人员安全。
+3. 法律层面：依据国际公约追究日方责任。
+
+日方义务：
+根据《维也纳外交关系公约》，接受国有特殊责任保护外国使馆安全。日方必须全面调查，追究相关人员法律责任，并向中方做出令人信服的交代，防止类似事件再次发生。`
+            }
+        };
+        // 原有的JS代码保持不变
+
+        // 新增视频控制功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('newsVideo');
+            const playBtn = document.getElementById('playBtn');
+            const pauseBtn = document.getElementById('pauseBtn');
+            const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+            // 播放按钮
+            playBtn.addEventListener('click', function() {
+                video.play();
+                this.style.opacity = '0.7';
+                pauseBtn.style.opacity = '1';
+            });
+
+            // 暂停按钮
+            pauseBtn.addEventListener('click', function() {
+                video.pause();
+                this.style.opacity = '0.7';
+                playBtn.style.opacity = '1';
+            });
+
+            // 全屏按钮
+            fullscreenBtn.addEventListener('click', function() {
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.webkitRequestFullscreen) {
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) {
+                    video.msRequestFullscreen();
+                }
+            });
+
+            // 视频播放状态监听
+            video.addEventListener('play', function() {
+                playBtn.style.opacity = '0.7';
+                pauseBtn.style.opacity = '1';
+            });
+
+            video.addEventListener('pause', function() {
+                pauseBtn.style.opacity = '0.7';
+                playBtn.style.opacity = '1';
+            });
+
+            // 初始样式
+            const videoBtns = document.querySelectorAll('.video-btn');
+            videoBtns.forEach(btn => {
+                btn.style.border = 'none';
+                btn.style.padding = '12px 24px';
+                btn.style.borderRadius = '8px';
+                btn.style.color = '#fff';
+                btn.style.fontSize = '1rem';
+                btn.style.fontWeight = '600';
+                btn.style.cursor = 'pointer';
+                btn.style.display = 'flex';
+                btn.style.alignItems = 'center';
+                btn.style.justifyContent = 'center';
+                btn.style.transition = 'all 0.3s ease';
+                btn.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
+
+                btn.addEventListener('mouseover', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 6px 16px rgba(0,0,0,0.3)';
+                });
+
+                btn.addEventListener('mouseout', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
+                });
+            });
+
+            // 自动播放检测
+            setTimeout(function() {
+                if (video.paused) {
+                    playBtn.style.opacity = '1';
+                    pauseBtn.style.opacity = '0.7';
+                }
+            }, 1000);
+        });
+        // 原有的JS代码保持不变
+
+        // 新增视频控制功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('newsVideo');
+            const playBtn = document.getElementById('playBtn');
+            const pauseBtn = document.getElementById('pauseBtn');
+            const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+            // 播放按钮
+            playBtn.addEventListener('click', function() {
+                video.play();
+                this.style.opacity = '0.7';
+                pauseBtn.style.opacity = '1';
+            });
+
+            // 暂停按钮
+            pauseBtn.addEventListener('click', function() {
+                video.pause();
+                this.style.opacity = '0.7';
+                playBtn.style.opacity = '1';
+            });
+
+            // 全屏按钮
+            fullscreenBtn.addEventListener('click', function() {
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.webkitRequestFullscreen) {
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) {
+                    video.msRequestFullscreen();
+                }
+            });
+
+            // 视频播放状态监听
+            video.addEventListener('play', function() {
+                playBtn.style.opacity = '0.7';
+                pauseBtn.style.opacity = '1';
+            });
+
+            video.addEventListener('pause', function() {
+                pauseBtn.style.opacity = '0.7';
+                playBtn.style.opacity = '1';
+            });
+
+            // 初始样式
+            const videoBtns = document.querySelectorAll('.video-btn');
+            videoBtns.forEach(btn => {
+                btn.style.border = 'none';
+                btn.style.padding = '12px 24px';
+                btn.style.borderRadius = '8px';
+                btn.style.color = '#fff';
+                btn.style.fontSize = '1rem';
+                btn.style.fontWeight = '600';
+                btn.style.cursor = 'pointer';
+                btn.style.display = 'flex';
+                btn.style.alignItems = 'center';
+                btn.style.justifyContent = 'center';
+                btn.style.transition = 'all 0.3s ease';
+                btn.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
+
+                btn.addEventListener('mouseover', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 6px 16px rgba(0,0,0,0.3)';
+                });
+
+                btn.addEventListener('mouseout', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
+                });
+            });
+
+            // 自动播放检测
+            setTimeout(function() {
+                if (video.paused) {
+                    playBtn.style.opacity = '1';
+                    pauseBtn.style.opacity = '0.7';
+                }
+            }, 1000);
+        });
+
+        // 下载视频功能
+        function downloadVideo() {
+            const video = document.getElementById('newsVideo');
+            const videoSrc = video.querySelector('source').src;
+
+            // 创建一个隐藏的下载链接
+            const downloadLink = document.createElement('a');
+            downloadLink.href = videoSrc;
+            downloadLink.download = '日本自卫队闯入使馆事件报道.mp4';
+            downloadLink.style.display = 'none';
+
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+
+            // 如果直接下载失败，提示用户
+            setTimeout(() => {
+                alert('如果下载没有开始，请右键点击视频并选择"视频另存为..."');
+            }, 1000);
+        }
+
+        // 下载视频功能
+        function downloadVideo() {
+            const video = document.getElementById('newsVideo');
+            const videoSrc = video.querySelector('source').src;
+
+            // 创建一个隐藏的下载链接
+            const downloadLink = document.createElement('a');
+            downloadLink.href = videoSrc;
+            downloadLink.download = '日本自卫队闯入使馆事件报道.mp4';
+            downloadLink.style.display = 'none';
+
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+
+            // 如果直接下载失败，提示用户
+            setTimeout(() => {
+                alert('如果下载没有开始，请右键点击视频并选择"视频另存为..."');
+            }, 1000);
+        }
+
+        function openModal(type) {
+            const modal = document.getElementById('modalOverlay');
+            const title = document.getElementById('modalTitle');
+            const text = document.getElementById('modalText');
+            if (modalData[type]) {
+                title.textContent = modalData[type].title;
+                text.textContent = modalData[type].text;
+            }
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            const modal = document.getElementById('modalOverlay');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.getElementById('modalOverlay').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+        document.querySelectorAll('.info-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const modalType = this.getAttribute('data-modal');
+                openModal(modalType);
+            });
+        });
+        // 修改下载按钮为分享功能
+        function shareArticle() {
+            if (navigator.share) {
+                navigator.share({
+                 title: '突发！日本自卫队官员强闯我驻日使馆 | 不虞的扁担',
+                 text: '深度报道：日本自卫队官员闯入中国驻日大使馆并威胁杀人，中方严正交涉。',
+                 url: window.location.href
+            });
+    } else {
+        // 微信内分享提示
+        alert('请点击右上角"..."分享到朋友圈或朋友');
+    }
+}
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {threshold: 0.1, rootMargin: '0px 0px -100px 0px'});
+        document.querySelectorAll('.info-card, .stance-card, .livelihood-card, .chart-box').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+        const cover = document.getElementById('cover');
+        let touchStartY = 0;
+        cover.addEventListener('touchstart', e => { touchStartY = e.changedTouches[0].screenY; }, { passive: true });
+        cover.addEventListener('touchend', e => {
+            if (touchStartY - e.changedTouches[0].screenY > 50) {
+                document.getElementById('overview').scrollIntoView({ behavior: 'smooth' });
+            }
+        }, { passive: true });
+        document.querySelectorAll('.social-icon').forEach(icon => {
+            icon.addEventListener('click', function() {
+                const platform = this.getAttribute('title');
+                alert(`即将跳转至央视${platform}每日新闻`);
+            });
+        });
+    </script>
+</body>
+</html>
